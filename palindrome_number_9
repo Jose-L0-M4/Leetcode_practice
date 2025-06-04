@@ -1,0 +1,17 @@
+class Solution:
+    def isPalindrome(self, x: int) -> bool:
+        var = str(x)
+        var = list(var)
+        cont = 0
+        x = -1
+
+        for i in range(len(var)):
+            
+            if var[x] == var[i]:
+                cont +=1
+            x -= 1
+
+        if cont == len(var):
+            return True
+        else:
+            return False
