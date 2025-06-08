@@ -1,0 +1,22 @@
+class Solution:
+    def removeDuplicates(self, nums: List[int]) -> int:
+        k = []
+
+        for i in nums:
+            if i in k:
+                pass
+            else:
+                k.append(i)
+
+        for i in range(len(nums)):
+            if i < len(k):
+                nums[i] = k[i]
+            else:
+                nums.pop()
+        return len(k)
+
+         
+        return len(nums)
+        
+
+        
