@@ -7,5 +7,16 @@ class Solution:
 #complexity N**2 pretty bad
 
 
+#second solution (much better)
+
+class Solution:
+    def singleNumber(self, nums):
+        index = 0
+        for num in nums:
+            index ^= num
+        return index
+#make use of the operator bitwise xor to know where the duplicate are and set bits to zero if those are equal.
+
+
         
         
